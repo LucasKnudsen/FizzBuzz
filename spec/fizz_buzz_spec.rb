@@ -2,7 +2,10 @@ require './lib/fizz_buzz'
 
 describe 'fizz_buzz' do
     it 'checks whether number is a whole number' do
-        expect(fizz_buzz('Dinosaur')).to eq false || nil
+        expect(fizz_buzz('Dinosaur')).to eq nil
+    end
+    it 'checks whether number is positive' do
+        expect(fizz_buzz(-3)).to eq nil
     end
 
     it 'returns 1 if number is 1' do

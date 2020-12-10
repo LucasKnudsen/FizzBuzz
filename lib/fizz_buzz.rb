@@ -4,7 +4,7 @@ end
 
 
 def fizz_buzz(number)
-    if has_zero_remainder?((number*10),10)
+    if has_zero_remainder?((number*10),10) && number > 0
         if has_zero_remainder?(number,5) && has_zero_remainder?(number,3)
             return "fizz buzz"
         elsif has_zero_remainder?(number,5)
@@ -18,3 +18,6 @@ def fizz_buzz(number)
         puts "That's not the way we play this game!"
     end
 end
+
+fizz_buzz('Hey Jude')
+fizz_buzz(-3)
